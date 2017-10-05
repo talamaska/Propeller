@@ -4,25 +4,28 @@ JavaScript library to rotate elements by mouse. Supports inertia and stepwise ro
 
 [Lot of demos](http://pixelscommander.com/polygon/propeller/example/jquerygrid.html)
 
+[Spinner game drawn by my doughter](http://pixelscommander.com/polygon/spinner/)
+
 [Project page](http://pixelscommander.com/polygon/propeller/)
 
 ![Propeller.js](http://pixelscommander.com/polygon/propeller/example/demo.gif "JavaScript library to rotate HTML elements by mouse or touch gestures")
 
-##Usage
+##
+Usage
 
-####Available on NPM
-    npm install propeller
+#### Available on NPM
+    npm install Propeller
 
-####Easy-to-use as jQuery plugin:
+#### Easy-to-use as jQuery plugin:
     $(nodeOrSelector).propeller(options);
 
-####or zero-dependancy library 
+#### or zero-dependancy library 
     new Propeller(nodeOrSelector, options)
 
-##Performance
+## Performance
 Propeller uses requestAnimationFrame and GPU compositing for better performance.
     
-##Options
+## Options
 - **angle** sets initial angle
 - **inertia** is the most valueble option. It is a number between 0 and 1. 0 means no rotation after mouse was released. 1 means infinite rotation. For this demo we use inertia equals to 0.99.
 - **speed** - initial speed of rotation. It also can be used as property in runtime.
@@ -35,16 +38,16 @@ Propeller uses requestAnimationFrame and GPU compositing for better performance.
 - **onDragStart** callback executed when start dragging.
 - **onDragStop** callback executed when stop dragging.
 
-##Methods
+## Methods
 - **unbind** unbind listeners to make propeller inactive, this does not stop rotation
 - **bind** bind listeners after they were unbinded
 - **stop** stop rotation immidiately
 
-##Public properties
+## Public properties
 - **angle** current propellers angle.
 - **speed** current speed of rotation. Degrees per frame.
 
-##License
+## License
 
 MIT: http://mit-license.org/
 
